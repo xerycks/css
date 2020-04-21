@@ -17,7 +17,7 @@ body {
     width: 360px;
     background: #f1f1f1;
     height: 500px;
-    padding: 50px 40px;
+    padding: 80px 40px;
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -61,6 +61,8 @@ body {
 .txtb span::after {
     content: '';
     position: absolute;
+    top: 40px;
+    right: 0px;
     width: 0%;
     height: 2px;
     background: linear-gradient(60deg, #e048ff, #4aeaff);
@@ -68,4 +70,8 @@ body {
 
 .focus+span::before {
     top: -5px;
+}
+
+.focus+span::after {
+    width: 100%;
 }
