@@ -58,4 +58,14 @@ body {
     transition: .5s;
 }
 
-.txtb
+.txtb span::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(60deg, #e048ff, #4aeaff);
+}
+
+.focus+span::before {
+    top: -5px;
+}
