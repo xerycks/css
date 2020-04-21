@@ -19,7 +19,7 @@
         <h1>Login</h1>
 
         <div class="txtb">
-            <input type="text" required autofocus>
+            <input type="text" required>
             <span data-placeholder="Username"></span>
         </div>
 
@@ -34,6 +34,11 @@
 
     </form>
 
+    <script>
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+    </script>
 </body>
 
 </html>
